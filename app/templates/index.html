@@ -6,7 +6,7 @@
 
     <!-- Form for adding an issue -->
     <form action="{{ url_for('main.add_task') }}" method="post" class="mb-3">
-        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
         <div class="input-group">
             <input type="text" name="title" class="form-control" placeholder="Title" required>
             <input type="text" name="description" class="form-control" placeholder="Description (Optional)">
